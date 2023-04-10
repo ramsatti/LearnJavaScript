@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 199, 96);
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    background: aquamarine;
+    width: 15%;
+    border-radius: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+#typing {
+    margin: auto;
+    text-align: center;
+    display: block;
+    width: 75%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#btn {
+    margin: auto;
+    text-align: center;
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #3e8e41;
+}
+
+#tasks {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#tasks p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#tasks p:last-child {
+    margin-bottom: 0;
+}
+
+#tasks input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#tasks button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#tasks button:hover {
+    background-color: #3e8e41;
+}
+
+#tasks button:nth-child(2) {
+    background-color: orange;
+}
+
+#tasks button:nth-child(2):hover {
+    background-color: darkorange;
+}

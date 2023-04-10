@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="text" id="hobbies" name="hobbies"><br><br>
+
+        <label for="level">What Level RU?</label>
+        <input type="radio" id="beginner" name="level" value="beginner">
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="intermediate" name="level" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id="experienced" name="level" value="experienced">
+        <label for="experienced">Experienced Nerd</label><br><br>
+
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree" id="label">I agree w/ Terms & Conditions</label><br><br>
+
+        <input type="submit" value="Submit" onclick="fullData()">
+    </form>
+
+</body>
+
+<link rel="stylesheet" href="forms.css">
+<script src="./forms.js"></script>
+
+</html>

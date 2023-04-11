@@ -5,18 +5,19 @@ let qna = [{
     'o2': 'Varshith',
     'o3': 'Hema (Mom)',
     'o4': 'Siva (Dad)'
-
 },
 {
     "question": "Question 2: Who Gave This Project?",
-    "answer": 1,
+    "ans": 1,
     "o1": "Varshith",
     "o2": "Ram",
     "o3": "Hema",
     "o4": "Siva"
-}]
+}
+]
 
 let index = 0
+let score = 0
 
 function displayQstn() {
     let q2d = qna[index]
@@ -33,10 +34,39 @@ function displayQstn() {
 }
 
 function checkAns() {
-    //if ans is correct say good job & go to the next question
-    // add 1 to the code
-    //else say bad & stay
-    // add -1 to the sc
+    let ans = qna[index].ans
+    console.log(ans)
+    let op1 = document.getElementById('coption1').checked
+    let op2 = document.getElementById('coption2').checked
+    let op3 = document.getElementById('coption3').checked
+    let op4 = document.getElementById('coption4').checked
+    let printing = document.getElementById('printer')
+
+    if (ans == 1 && op1) {
+        printing.innerHTML = 'You are Correct!'
+        ++score
+        ++index
+        displayQstn()
+    }
+    else if (ans == 2 && op2) {
+        printing.innerHTML = 'You are Correct'
+        ++score
+        ++index
+        displayQstn()
+    }
+    else if (ans == 3 && op3) {
+        printing.innerHTML = 'You are Correct'
+        ++score
+        ++index
+        displayQstn()
+    }
+    else if (ans == 4 && op4) {
+        printing.innerHTML = 'You are Correct'
+        ++score
+        ++index
+        displayQstn()
+    }
 }
- 
+
 displayQstn()
+console.log(score)

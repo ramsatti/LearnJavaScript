@@ -1,0 +1,57 @@
+/* Set the base font and background colors */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: #444;
+  background-color: #f6f6f6;
+}
+
+/* Center the quiz container and add some padding */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+/* Style the question label */
+#q {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style the radio buttons and their labels */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 20px;
+}
+
+/* Style the submit button */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the message that shows if the answer is correct or incorrect */
+#printer {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}

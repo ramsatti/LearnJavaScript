@@ -10,6 +10,7 @@ function data() {
     let label = document.getElementById('label').value
     let submitButton = document.querySelector('input[type="submit"]').value
 
-    fullData = user, date, gender, hobbies, beginner, intermediate, experienced, agree, label, submitButton
+    fullData = `${user}, ${date}, ${gender}, ${hobbies}, ${beginner}, ${intermediate}, ${experienced}, ${agree}, ${label}, ${submitButton}`
+    console.log(fullData)
     alert(fullData)
 }

@@ -1,57 +1,94 @@
-/* Set the base font and background colors */
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  color: #444;
-  background-color: #f6f6f6;
+  background-color: #f1c40f;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
-/* Center the quiz container and add some padding */
 .container {
-  max-width: 600px;
+  width: 900px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-  border-radius: 5px;
+  border-radius: 10px;
+  background-color: #ecf0f1;
 }
 
-/* Style the question label */
-#q {
-  font-size: 24px;
-  font-weight: bold;
+h1 {
+  font-size: 48px;
+  margin-top: 0;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3498db;
 }
 
-/* Style the radio buttons and their labels */
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #2c3e50;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+
 input[type="radio"] {
   margin-right: 10px;
 }
 
-label {
-  font-size: 20px;
-}
-
-/* Style the submit button */
 button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
+  font-size: 24px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #27ae60;
+  color: #fff;
   border: none;
   border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
-  font-size: 20px;
-  margin-top: 20px;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 button:hover {
-  background-color: #3e8e41;
+  transform: scale(1.1);
 }
 
-/* Style the message that shows if the answer is correct or incorrect */
-#printer {
-  font-size: 18px;
-  font-weight: bold;
+p {
   margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  width: 15%;
+  margin: auto;
+}
+
+#printer {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#modifier {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: gray;
+}
+
+#score {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(80, 80, 80);
+  border-radius: 5px;
+  color: white;
 }

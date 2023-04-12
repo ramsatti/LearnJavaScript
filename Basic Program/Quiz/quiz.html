@@ -3,25 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>🧪 Quiz</title>
 </head>
 
 <body>
-    <div>
-        <label id="q"></label><br><br>
-        <input type="radio" id="coption1" name="name">
-        <label id="option1"></label><br><br>
-        <input type="radio" id="coption2" name="name">
-        <label id="option2"></label><br><br>
-        <input type="radio" id="coption3" name="name">
-        <label id="option3"></label><br><br>
-        <input type="radio" id="coption4" name="name">
-        <label id="option4"></label><br><br>
-        <button onclick="checkAns()">Submit</button>
+    <div class="container">
+        <h1>🧪 Quiz</h1>
+            <label id="q"></label>
+            <div class="options">
+                <input type="radio" id="coption1" name="name">
+                <label id="option1"></label>
+            </div>
+            <div class="options">
+                <input type="radio" id="coption2" name="name">
+                <label id="option2"></label>
+            </div>
+            <div class="options">
+                <input type="radio" id="coption3" name="name">
+                <label id="option3"></label>
+            </div>
+            <div class="options">
+                <input type="radio" id="coption4" name="name">
+                <label id="option4"></label>
+            </div>
+            <button onclick="checkAns()">Submit</button>
     </div>
     <p id="printer"></p>
+    <button onclick="modify()" id="modifier">Modify</button>
+    <label for="score" id="score"></label>
 </body>
 
 <link rel="stylesheet" href="quiz.css">

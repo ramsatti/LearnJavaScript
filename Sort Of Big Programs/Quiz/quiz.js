@@ -73,7 +73,7 @@ function checkAns() {
         displayQstn()
     }
     else {
-        print.innerHTML = 'You are Incorrect Unforunately'
+        printing.innerHTML = 'You are Incorrect Unforunately'
         --score
     }
 }

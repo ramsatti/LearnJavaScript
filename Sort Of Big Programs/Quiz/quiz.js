@@ -1,21 +1,8 @@
-let qna = [{
-    'question': '<strong><u>Question 1: Who Made This Program (Hint: Youngest One in Our Family)?</u></strong>',
-    'ansnewVal': 1,
-    'o1': 'Ram',
-    'o2': 'Varshith',
-    'o3': 'Hema (Mom)',
-    'o4': 'Siva (Dad)'
-},
-{
-    "question": "<strong><u>Question 2: Who Gave This Project?</u></strong>",
-    "ansnewVal": 1,
-    "o1": "Varshith",
-    "o2": "Ram",
-    "o3": "Hema",
-    "o4": "Siva"
-}
-]
+let qna = JSON.parse(localStorage.getItem('storeQna'))
 
+
+console.log()
+localStorage.setItem('storeQna', JSON.stringify(qna))
 let index = 0
 let score = 0
 
@@ -102,10 +89,40 @@ function modify() {
         document.getElementById('coption3').checked = false
         document.getElementById('coption4').checked = false
         qna[index].ansnewVal = Number(ansnewVal)
+        localStorage.setItem('storeQna', JSON.stringify(qna))
         displayQstn()
     }
 }
 
+function createQuestion() {
+    let paswrdCheck = prompt('What is the Password? ')
+    if (paswrdCheck == 'monkeys can fly') {
+        let aboutQuestion = prompt('What is the Question? ')
+        let o1create = prompt('What is Option 1?')
+        let o2create = prompt('What is Option 2?')
+        let o3create = prompt('What is Option 3?')
+        let o4create = prompt('What is Option 4?')
+        let answer = prompt('What Option is the Answer?')
+
+        let object2append = {
+            "question": aboutQuestion,
+            "o1": o1create,
+            "o2": o2create,
+            'o3': o3create,
+            'o4': o4create,
+            'ansnewVal': answer
+
+        }
+        qna.push(object2append)
+        localStorage.setItem('storeQna', JSON.stringify(qna))
+        
+        //UnSelect Radio After Submitting -----------------
+        document.getElementById('coption1').checked = false
+        document.getElementById('coption2').checked = false
+        document.getElementById('coption3').checked = false
+        document.getElementById('coption4').checked = false
+    }
+}
 
 displayQstn()
 console.log(score)

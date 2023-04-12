@@ -22,7 +22,7 @@ let score = 0
 function displayQstn() {
     if (index >= qna.length) {
         index = 0
-        alert ('Your Final Score = ' + score + '. You Can See The Final Score Top Right of WebPage')
+        alert('Your Final Score = ' + score + '. You Can See The Final Score Top Right of WebPage')
         finalScore = document.getElementById('score').innerHTML = 'Final Score = ' + score
         score = 0
         location.reload()
@@ -76,6 +76,11 @@ function checkAns() {
         printing.innerHTML = 'You are Incorrect Unforunately'
         --score
     }
+
+    document.getElementById('coption1').checked = false
+    document.getElementById('coption2').checked = false
+    document.getElementById('coption3').checked = false
+    document.getElementById('coption4').checked = false
 }
 
 function modify() {
@@ -92,7 +97,10 @@ function modify() {
         let o4NewValue = prompt('What is Option 4?')
         qna[index].o4 = o4NewValue
         let ansnewVal = prompt('What Option is the Answer?')
-        alert(Number(ansnewVal))
+        document.getElementById('coption1').checked = false
+        document.getElementById('coption2').checked = false
+        document.getElementById('coption3').checked = false
+        document.getElementById('coption4').checked = false
         qna[index].ansnewVal = Number(ansnewVal)
         displayQstn()
     }

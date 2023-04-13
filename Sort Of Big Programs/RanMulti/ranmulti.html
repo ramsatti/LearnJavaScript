@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication</title>
+
+</head>
+
+<body>
+    <div id="checker">
+        <p id="printer"></p>
+        <input type="text" id="ans" />
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+    <label for="score" id="score">Score: 0</label>
+    <p id="output"></p>
+    <button id="runner" onclick="startTimer()">Start Timer!</button>
+    <div id="timing">
+        <select name="timer" id="timer">
+            <option value="30sec">30 Seconds</option>
+            <option value="1min">1 Minute</option>
+            <option value="10mn">10 Minutes</option>
+        </select>
+    </div>
+</body>
+
+<link rel="stylesheet" href="ranmulti.css" />
+<script src="ranmulti.js"></script>
+
+</html>
